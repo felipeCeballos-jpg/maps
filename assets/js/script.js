@@ -153,11 +153,8 @@ function resetAnimationClass() {
     return;
   }
 
-  brunch1.classList.remove('scroll-action');
-  brunch1.classList.add('scroll-action-left');
-
-  brunch2.classList.remove('scroll-action-left');
-  brunch2.classList.add('scroll-action');
+  brunch1.classList.add('scroll-action');
+  brunch2.classList.add('scroll-action-left');
 }
 
 function sideElementsAnimation() {
