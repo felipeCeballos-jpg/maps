@@ -1,0 +1,461 @@
+@font-face {
+  font-family: 'MADE Likes Slab';
+  src: url('assets/font/MADE-Likes-Slab.otf');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  background-color: #f7dfbe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+body .loader img {
+  height: 16rem;
+  width: 16rem;
+}
+
+body {
+  background-color: #f7dfbe;
+  color: #000000;
+  font-family: 'MADE Likes Slab';
+}
+
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('./assets/bg.webp');
+  background-position: center top;
+  background-size: 100dvh 100dvh;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  padding: 0px 50px;
+  overflow-x: hidden;
+  overflow-y: clip;
+}
+
+section img,
+.hero-container img {
+  pointer-events: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.maps-section {
+  position: relative;
+  width: 71.813rem;
+  /* width: 100%; */
+}
+
+.hero-section {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.language-container {
+  display: flex;
+  justify-content: flex-end;
+  height: 4.188rem;
+}
+
+.language-selector {
+  position: relative;
+  /*  width: 4.696rem;
+    height: 1.688rem; */
+  width: 6.813rem;
+  align-self: flex-end;
+  margin-right: 5rem;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: none;
+  pointer-events: auto !important;
+  z-index: 2;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  top: -1.625rem;
+  left: 10.238rem;
+  gap: 1.313rem;
+}
+
+.dedicated-img {
+  width: 18.125rem;
+  height: 3.5rem;
+  margin-left: 3.688rem;
+}
+
+.header-img {
+  width: 29.581rem;
+  height: 16.636rem;
+}
+
+.burial-section {
+  position: relative;
+  margin-top: 1.329rem;
+  margin-bottom: 19.306rem;
+}
+
+.burial-container {
+  position: relative;
+  width: 42rem;
+  height: 14.163rem;
+  left: 10.385rem;
+}
+
+.burial-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/address-empty.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.burial-txt {
+  display: flex;
+  width: 40.938rem;
+  flex-direction: column;
+  gap: 0.984rem;
+  padding-top: 1.332rem;
+  padding-left: 2.664rem;
+}
+
+p {
+  font-size: 1.2em;
+  letter-spacing: 0.02rem;
+}
+
+.title {
+  font-size: 2.3em;
+}
+
+.link {
+  color: #4758af;
+  text-decoration: underline;
+}
+
+.grave-container {
+  position: absolute;
+  display: block;
+  width: 29.948rem;
+  height: 18.357rem;
+  left: 1.428rem;
+  top: -18.357rem;
+  transform: rotate(-0.03deg);
+  z-index: 3;
+}
+
+.grave-img {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/grave.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.chapel-container {
+  position: absolute;
+  display: block;
+  width: 25.348rem;
+  height: 18.654rem;
+  top: -19.154rem;
+  left: 36.063rem;
+  z-index: 3;
+}
+
+.chapel-img {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/chapel.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.brunch1-container {
+  position: absolute;
+  display: block;
+  width: 20.18rem;
+  height: 28.843rem;
+  top: -16.063rem;
+  left: 62.543rem;
+
+  z-index: 7;
+}
+
+.brunch1-img {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/brunch.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.map-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 17.459rem;
+}
+
+.map-container {
+  display: block;
+  width: 71.688rem;
+  height: 49.063rem;
+}
+
+.map-img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/map-ru.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.map-img:lang(en) {
+  background-image: url('./assets/map-eng.webp');
+}
+
+.pins-container {
+  display: block;
+  position: absolute;
+  width: 46.438rem;
+  height: 43.313rem;
+  left: 11.813rem;
+  z-index: 2;
+}
+
+.pins-img {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/pins.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.brunch2-container {
+  position: absolute;
+  display: block;
+  width: 18.354rem;
+  height: 25.716rem;
+  top: -32.813rem;
+  left: -8.188rem;
+  rotate: 4.65deg;
+  z-index: 7;
+}
+
+.brunch2-img {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/brunch2.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.memorial-mushroom-container {
+  position: absolute;
+  display: block;
+  width: 25.433rem;
+  height: 16.166rem;
+  left: 13.929rem;
+  top: -19.5rem;
+  transform: rotate(-1.09deg);
+  z-index: 3;
+}
+
+.memorial-mushroom-img {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/memorial-mushroom.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.entrance-container {
+  position: absolute;
+  display: block;
+  width: 27.67rem;
+  height: 18.372rem;
+  left: 45.74rem;
+  top: -15.6rem;
+  transform: rotate(-0.77deg);
+  z-index: 3;
+}
+
+.entrance-img {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/entrance.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+/* FOOTER */
+.menu {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 19.313rem;
+  transform: translateY(19rem);
+}
+
+.pages {
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+}
+
+.navbook {
+  max-width: 80vw;
+  width: 100%;
+  margin-bottom: 0px;
+  margin-left: -4vmin;
+  z-index: 2;
+}
+
+.main {
+  margin: -3vmin 0 0 5vmin;
+  height: 100%;
+}
+
+.milestones {
+  margin: 1vmin 0 0 -3vmin;
+  height: 100%;
+  z-index: 1;
+}
+
+.gallery {
+  margin: -4vmin 0 0 -6vmin;
+  height: 100%;
+}
+
+.my-granny {
+  margin: 1vmin 0 0 -3vmin;
+  height: 100%;
+  z-index: 1;
+}
+
+.remember {
+  margin: -4vmin 0 0 -6vmin;
+  height: 100%;
+}
+
+.map {
+  margin: 1.5vmin 0 0 -4vmin;
+  height: 100%;
+  z-index: 1;
+}
+
+.nanas-words {
+  margin: -3vmin 0 0 -3vmin;
+  height: 100%;
+}
+
+.pages img {
+  width: 12vw;
+  transition: transform 0.3s ease-in-out;
+  transform: translateY(0rem);
+}
+
+.pages img:hover {
+  cursor: pointer;
+  transform: translateY(-1rem);
+}
+
+.menu-active {
+  animation: 1.6s ease-out 0.8ms forwards activeMenu;
+}
+
+@keyframes activeMenu {
+  from {
+    transform: translateY(19rem);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (min-width: 1367px) {
+  .navbook {
+    max-width: 1196px;
+  }
+
+  .pages .main {
+    width: 196px;
+    margin-left: 0rem;
+    margin-top: 1.375rem;
+  }
+
+  .pages .milestones {
+    width: 194px;
+    margin-left: -55px;
+    margin-top: 5.25rem;
+  }
+
+  .pages .gallery {
+    width: 187px;
+    margin-left: -90px;
+    margin-top: 0.875rem;
+  }
+
+  .pages .my-granny {
+    width: 215px;
+    margin-top: 5.25rem;
+    margin-left: -60px;
+  }
+
+  .pages .remember {
+    width: 223px;
+    margin-left: -120px;
+    margin-top: 0.4rem;
+  }
+
+  .pages .map {
+    width: 207px;
+    margin-top: 5.813rem;
+    margin-left: -70px;
+  }
+
+  .pages .nanas-words {
+    width: 183px;
+    margin-top: 2.313rem;
+    margin-left: -50px;
+  }
+}

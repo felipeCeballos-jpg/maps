@@ -1,0 +1,178 @@
+@media only screen and (max-width: 800px) {
+  main {
+    padding: 0rem;
+  }
+
+  .language-container {
+    height: auto;
+    margin-top: 2vmin;
+  }
+
+  .language-selector {
+    width: 79px;
+    right: 60px;
+    margin-right: 0rem;
+  }
+
+  .hero-section {
+    order: 0;
+  }
+
+  .decorated1-section {
+    order: 3;
+    margin-top: 1vmin;
+  }
+
+  .burial-section {
+    order: 2;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+  }
+
+  .decorated2-section {
+    order: 1;
+  }
+
+  .section-navbook {
+    order: 4;
+  }
+
+  .map-section {
+    display: none;
+    margin-bottom: 0rem;
+  }
+
+  .maps-section {
+    max-width: 50rem;
+    width: 100%;
+  }
+
+  .header-container {
+    justify-content: center;
+    left: 0rem;
+    top: 0rem;
+    margin-top: 1.875rem;
+    margin-bottom: 6vmin;
+  }
+
+  .dedicated-img {
+    width: 80%;
+    height: 100%;
+    margin-left: 0rem;
+    align-self: center;
+  }
+
+  .header-img {
+    width: 96%;
+    height: 100%;
+    align-self: center;
+  }
+
+  .burial-container {
+    left: 0rem;
+    width: 100%;
+    height: 161vmin;
+  }
+
+  .burial-img {
+    background-image: url('./assets/address-m.webp');
+  }
+
+  .burial-txt {
+    width: 85vmin;
+    gap: 0rem;
+    padding-left: 14vmin;
+    padding-right: 0px;
+    padding-top: 20vmin;
+  }
+
+  p {
+    /* font-size: 5.1vw; */
+    font-size: 6vw;
+  }
+
+  .title {
+    /*  font-size: 8vw; */
+    font-size: 11vw;
+    margin-bottom: 8vmin;
+  }
+
+  .link {
+    margin-top: 6vmin;
+  }
+
+  .grave-container {
+    position: relative;
+    width: 138.125vmin;
+    height: 84.5vmin;
+    top: 0rem;
+    /*  left: -186px; */
+    left: -24vmin;
+  }
+
+  .chapel-container,
+  .map-container,
+  .memorial-mushroom-container,
+  .pins-container {
+    display: none;
+  }
+
+  .brunch2-container {
+    width: 68vmin;
+    height: 97vmin;
+    top: -8vmin;
+    left: -34vmin;
+    rotate: 0deg;
+  }
+
+  .entrance-container {
+    position: relative;
+    top: 0rem;
+    left: -16vmin;
+    width: 126vmin;
+    height: 85vmin;
+  }
+
+  .brunch1-container {
+    left: 68vmin;
+    top: 0rem;
+    width: 68vmin;
+    height: 90vmin;
+  }
+
+  .brunch1-img {
+    background-image: url('./assets/brunch2.webp');
+  }
+
+  .brunch2-img {
+    background-image: url('./assets/brunch.webp');
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  .menu {
+    width: 100%;
+    margin-top: 31vmin;
+  }
+
+  .pages {
+    margin-left: -5vmin;
+    bottom: 4px;
+  }
+
+  .navbook {
+    max-width: 110vmin;
+    width: 110vmin;
+    margin-left: -9vmin;
+  }
+
+  .pages img {
+    width: 18vmin;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .pages img:hover {
+    width: 18vmin;
+  }
+}

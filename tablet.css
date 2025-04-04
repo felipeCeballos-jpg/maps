@@ -1,0 +1,198 @@
+@media only screen and (min-width: 801px) and (max-width: 1366px) {
+  .maps-section {
+    max-width: 62.813rem;
+  }
+
+  .header-container {
+    top: -3.188rem;
+    left: 15.1rem;
+    gap: 3.375rem;
+  }
+
+  .dedicated-img {
+    width: 18.063rem;
+    height: 3.446rem;
+    margin-left: 1.181rem;
+  }
+
+  .header-img {
+    width: 29.519rem;
+  }
+
+  .burial-section {
+    /*  margin-bottom: 4.3rem; */
+    margin-bottom: 5.3rem;
+    margin-top: -3rem;
+    z-index: 5;
+  }
+
+  .burial-container {
+    width: 46.561rem;
+    height: 16.163rem;
+    left: 9.2rem;
+  }
+
+  .brunch1-container {
+    top: -35.3rem;
+    left: 49.543rem;
+  }
+
+  .grave-container {
+    left: -13.572rem;
+    top: -14.357rem;
+    transform: rotate(0deg);
+    /* 36px */
+  }
+
+  .chapel-container {
+    top: -6.154rem;
+    left: 44.1rem;
+    transform: rotate(0deg);
+  }
+
+  .map-section {
+    /* margin-bottom: 4rem; */
+    margin-bottom: 6rem;
+  }
+
+  .map-container {
+    width: 62.813rem;
+    height: 43.001rem;
+  }
+
+  .pins-container {
+    max-width: 40.625rem;
+    max-height: 38.063rem;
+    left: 10.3rem;
+  }
+
+  .memorial-mushroom-container {
+    width: 29.888rem;
+    height: 19.013rem;
+    left: -2.5rem;
+    top: -11.8rem;
+    transform: rotate(0deg);
+  }
+
+  .entrance-container {
+    left: 33.74rem;
+    top: -8.6rem;
+    transform: rotate(0deg);
+  }
+
+  .brunch2-container {
+    /* 28.09 */
+    /* 55.53 */
+    width: 20.11rem;
+    height: 25.637rem;
+    top: -15.5rem;
+    left: -12.188rem;
+    rotate: 0deg;
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .language-selector {
+    margin-right: 7rem;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .maps-section {
+    width: 1120px;
+  }
+
+  .dedicated-img {
+    width: 14.811rem;
+    height: 2.825rem;
+  }
+
+  .header-container {
+    left: 18.1rem;
+  }
+
+  .header-img {
+    width: 24.204rem;
+    height: 13.658rem;
+  }
+
+  .burial-section {
+    margin-bottom: 3.3rem;
+  }
+
+  .burial-container {
+    width: 38.178rem;
+    height: 12.874rem;
+    left: 12.8rem;
+  }
+
+  .burial-txt {
+    width: 33.938rem;
+    gap: 0.7rem;
+    padding-top: 1rem;
+    padding-left: 2.1rem;
+  }
+
+  .tittle {
+    font-size: 2em;
+  }
+
+  .brunch1-container {
+    width: 16.548rem;
+    height: 23.651rem;
+    top: -28.8rem;
+    left: 46.2rem;
+  }
+
+  .grave-container {
+    width: 24.556rem;
+    height: 15.052rem;
+    top: -11.8rem;
+    left: -5.8rem;
+  }
+
+  .chapel-container {
+    width: 20.784rem;
+    height: 15.273rem;
+    top: -4.7rem;
+    left: 41.7rem;
+  }
+
+  .map-section {
+    margin-bottom: 3rem;
+  }
+
+  .map-container {
+    width: 51.487rem;
+    height: 35.238rem;
+  }
+
+  .pins-container {
+    width: 33.309rem;
+    height: 31.156rem;
+    left: 14.1rem;
+  }
+
+  .memorial-mushroom-container {
+    width: 24.506rem;
+    height: 15.588rem;
+    left: 3.99rem;
+    top: -6.99rem;
+  }
+
+  .entrance-container {
+    width: 22.689rem;
+    height: 15.073rem;
+    left: 33.2rem;
+    top: -5.2rem;
+  }
+
+  .brunch2-container {
+    width: 16.49rem;
+    height: 23.769rem;
+    top: -11.5rem;
+    left: -3.4rem;
+  }
+}
