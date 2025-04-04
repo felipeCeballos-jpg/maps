@@ -144,20 +144,20 @@ function resetAnimationClass() {
   const brunch2 = document.querySelector('.brunch2-container');
 
   if (mqlMobile.matches) {
-    brunch1.classList.remove('scroll-action');
-    brunch1.classList.add('scroll-action-left');
+    brunch1.classList.remove('scroll-action-left');
+    brunch1.classList.add('scroll-action');
 
-    brunch2.classList.remove('scroll-action-left');
-    brunch2.classList.add('scroll-action');
+    brunch2.classList.remove('scroll-action');
+    brunch2.classList.add('scroll-action-left');
 
     return;
   }
 
-  brunch1.classList.remove('scroll-action-left');
-  brunch1.classList.add('scroll-action');
+  brunch1.classList.remove('scroll-action');
+  brunch1.classList.add('scroll-action-left');
 
-  brunch2.classList.remove('scroll-action');
-  brunch2.classList.add('scroll-action-left');
+  brunch2.classList.remove('scroll-action-left');
+  brunch2.classList.add('scroll-action');
 }
 
 function sideElementsAnimation() {
