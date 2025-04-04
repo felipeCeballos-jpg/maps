@@ -399,8 +399,34 @@ p {
   transform: translateY(-1rem);
 }
 
+.scroll-active-left {
+  animation: 1s linear 0s forwards slideLeft;
+}
+
+.scroll-active-right {
+  animation: 1s linear 0s forwards slideRight;
+}
+
 .menu-active {
   animation: 1.6s ease-out 0.8ms forwards activeMenu;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(20%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 @keyframes activeMenu {
