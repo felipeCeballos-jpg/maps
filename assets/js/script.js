@@ -38,6 +38,8 @@ window.addEventListener('load', () => {
 
 window.addEventListener('DOMContentLoaded', () => {
   updateDesign(mqlMobile.matches);
+
+  sideElementsAnimation();
   booksAnimation();
 });
 
@@ -48,19 +50,23 @@ switchLanguageButton.addEventListener('click', () => {
   setLanguage(html);
 
   updateDesign(mqlMobile.matches).then((result) => {
-    checkLoaded(result.timestamp, loader, true);
+    checkLoaded(result.timestamp, loader);
   });
+
+  sideElementsAnimation();
+  booksAnimation();
 });
 
 mqlMobile.addEventListener('change', (event) => {
   if (!event.matches) return;
   loader.style.display = 'flex';
 
-  booksAnimation();
-
   updateDesign(event.matches).then((result) => {
-    checkLoaded(result.timestamp, loader, true);
+    checkLoaded(result.timestamp, loader);
   });
+
+  sideElementsAnimation();
+  booksAnimation();
 
   /* loader.style.display = 'none'; */
 });
@@ -69,11 +75,12 @@ mqlDefault.addEventListener('change', (event) => {
   if (!event.matches) return;
   loader.style.display = 'flex';
 
-  booksAnimation();
-
   updateDesign(event.matches).then((result) => {
-    checkLoaded(result.timestamp, loader, true);
+    checkLoaded(result.timestamp, loader);
   });
+
+  sideElementsAnimation();
+  booksAnimation();
 });
 
 /* Update Design */
@@ -130,4 +137,68 @@ function booksAnimation() {
   );
 
   booksObserver.observe(footer);
+}
+
+function resetAnimationClass() {
+  const brunch1 = document.querySelector('.brunch1-container');
+  const brunch2 = document.querySelector('.brunch2-container');
+
+  if (mqlMobile.matches) {
+    console.log('Entreeeee');
+
+    brunch1.classList.remove('scroll-action');
+    brunch1.classList.add('scroll-action-left');
+
+    brunch2.classList.remove('scroll-action-left');
+    brunch2.classList.add('scroll-action');
+
+    return;
+  }
+
+  console.log('brunch 1: ', brunch1.classList);
+
+  brunch1.classList.remove('scroll-action-left');
+  brunch1.classList.add('scroll-action');
+
+  brunch2.classList.remove('scroll-action');
+  brunch2.classList.add('scroll-action-left');
+}
+
+function sideElementsAnimation() {
+  resetAnimationClass();
+
+  resetAnimation([
+    { selector: '.scroll-action', animationClass: 'scroll-active-right' },
+    { selector: '.scroll-action-left', animationClass: 'scroll-active-left' },
+  ]);
+
+  const elementsToAnimate = [
+    { selector: '.scroll-action', side: 'right' },
+    { selector: '.scroll-action-left', side: 'left' },
+  ];
+
+  elementsToAnimate.forEach(({ selector, side }) => {
+    document.querySelectorAll(selector).forEach((item) => {
+      initScrollAnimationObserver(item, side);
+    });
+  });
+}
+
+function initScrollAnimationObserver(item, side) {
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add(`scroll-active-${side}`);
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      rootMargin: '0px',
+      threshold: 0, // trigger when 0% of the element is visible
+    }
+  );
+
+  observer.observe(item);
 }
