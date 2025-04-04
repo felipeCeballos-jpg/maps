@@ -144,8 +144,6 @@ function resetAnimationClass() {
   const brunch2 = document.querySelector('.brunch2-container');
 
   if (mqlMobile.matches) {
-    console.log('Entreeeee');
-
     brunch1.classList.remove('scroll-action');
     brunch1.classList.add('scroll-action-left');
 
@@ -154,8 +152,6 @@ function resetAnimationClass() {
 
     return;
   }
-
-  console.log('brunch 1: ', brunch1.classList);
 
   brunch1.classList.remove('scroll-action-left');
   brunch1.classList.add('scroll-action');
