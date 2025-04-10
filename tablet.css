@@ -17,6 +17,7 @@
 
   .header-img {
     width: 29.519rem;
+    height: 16.601rem;
   }
 
   .burial-section {
@@ -39,7 +40,7 @@
 
   .grave-container {
     left: -13.572rem;
-    top: -14.357rem;
+    top: -14.6rem;
     transform: rotate(0deg);
     /* 36px */
   }
