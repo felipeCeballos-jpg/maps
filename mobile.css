@@ -86,7 +86,8 @@
     padding-top: 20vmin;
   }
 
-  p {
+  p,
+  a {
     /* font-size: 5.1vw; */
     font-size: 6vw;
   }
@@ -150,6 +151,10 @@
     transform: scaleX(-1);
   }
 
+  .brunch-navigation-container {
+    display: none;
+  }
+
   .menu {
     width: 100%;
     margin-top: 31vmin;
@@ -158,6 +163,7 @@
   .pages {
     margin-left: -5vmin;
     bottom: 4px;
+    /* bottom: -21px; */
   }
 
   .navbook {

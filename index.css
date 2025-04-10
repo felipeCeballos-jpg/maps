@@ -11,6 +11,7 @@
 
 html,
 body {
+  overflow-x: hidden;
   height: 100%;
 }
 
@@ -41,21 +42,26 @@ body {
 }
 
 main {
+  width: 100vw;
+  min-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url('./assets/bg.webp');
   background-position: center top;
-  background-size: 100dvh 100dvh;
-  background-size: 100% 100%;
+  /*  background-size: 100dvh 100dvh; */
+  /* background-size: 100vw 100vh; */
+  /*  background-size: 100% 100%; */
+  background-size: cover;
   background-repeat: no-repeat;
   padding: 0px 50px;
-  overflow-x: hidden;
-  overflow-y: clip;
+  /* overflow-x: hidden;
+  overflow-y: clip; */
+  overflow: hidden;
 }
 
-section img,
+.maps-section img,
 .hero-container img {
   pointer-events: none;
   user-select: none;
@@ -147,7 +153,8 @@ section img,
   padding-left: 2.664rem;
 }
 
-p {
+p,
+a {
   font-size: 1.2em;
   letter-spacing: 0.02rem;
 }
@@ -325,6 +332,29 @@ p {
 }
 
 /* FOOTER */
+.section-navbook {
+  position: relative;
+}
+
+.brunch-navigation-container {
+  position: absolute;
+  display: block;
+  width: 16.5rem;
+  height: 9.125rem;
+  right: -16px;
+  /*  bottom: 0px; */
+  bottom: -9px;
+}
+
+.brunch-navigation-img {
+  width: 100%;
+  height: 100%;
+  background-image: url('./assets/brunch-navigation.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 .menu {
   position: relative;
   width: 100%;
@@ -334,20 +364,25 @@ p {
   align-items: center;
   margin-top: 19.313rem;
   transform: translateY(19rem);
+  z-index: 2;
 }
 
 .pages {
   display: flex;
   position: absolute;
   bottom: 15px;
+
+  /*  bottom: -5vmin; */
 }
 
 .navbook {
   max-width: 80vw;
   width: 100%;
   margin-bottom: 0px;
-  margin-left: -4vmin;
+  /* margin-left: -4vmin; */
+  margin-left: -2vmin;
   z-index: 2;
+  pointer-events: none;
 }
 
 .main {
@@ -361,23 +396,23 @@ p {
   z-index: 1;
 }
 
-.gallery {
+.stories {
   margin: -4vmin 0 0 -6vmin;
   height: 100%;
 }
 
-.my-granny {
+.gallery {
   margin: 1vmin 0 0 -3vmin;
   height: 100%;
   z-index: 1;
 }
 
-.remember {
+.my-granny {
   margin: -4vmin 0 0 -6vmin;
   height: 100%;
 }
 
-.map {
+.remember {
   margin: 1.5vmin 0 0 -4vmin;
   height: 100%;
   z-index: 1;
@@ -389,6 +424,10 @@ p {
 }
 
 .pages img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
   width: 12vw;
   transition: transform 0.3s ease-in-out;
   transform: translateY(0rem);
@@ -455,25 +494,25 @@ p {
     margin-top: 5.25rem;
   }
 
-  .pages .gallery {
+  .pages .stories {
     width: 187px;
     margin-left: -90px;
     margin-top: 0.875rem;
   }
 
-  .pages .my-granny {
+  .pages .gallery {
     width: 215px;
     margin-top: 5.25rem;
     margin-left: -60px;
   }
 
-  .pages .remember {
+  .pages .my-granny {
     width: 223px;
     margin-left: -120px;
     margin-top: 0.4rem;
   }
 
-  .pages .map {
+  .pages .remember {
     width: 207px;
     margin-top: 5.813rem;
     margin-left: -70px;
@@ -483,5 +522,10 @@ p {
     width: 183px;
     margin-top: 2.313rem;
     margin-left: -50px;
+  }
+
+  .brunch-navigation-container {
+    /*  right: -184px; */
+    right: -196px;
   }
 }

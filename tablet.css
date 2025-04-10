@@ -84,11 +84,23 @@
     /* 28.09 */
     /* 55.53 */
     width: 20.11rem;
-    height: 25.637rem;
+    /* height: 25.637rem; */
+    height: 26.8rem;
     top: -15.5rem;
     left: -12.188rem;
     rotate: 0deg;
   }
+
+  .brunch-navigation-container {
+    width: 12.688rem;
+    height: 7rem;
+    /* right: -11vmin; */
+    right: -9vmin;
+  }
+
+  /* .pages {
+    bottom: -2vmin;
+  } */
 }
 
 @media only screen and (max-width: 1120px) {
@@ -96,7 +108,8 @@
     margin-right: 7rem;
   }
 
-  p {
+  p,
+  a {
     font-size: 0.9em;
   }
 
@@ -191,8 +204,15 @@
 
   .brunch2-container {
     width: 16.49rem;
-    height: 23.769rem;
+    /*  height: 23.769rem; */
+    height: 26.8rem;
     top: -11.5rem;
     left: -3.4rem;
+  }
+
+  .brunch-navigation-container {
+    width: 9.063rem;
+    height: 5rem;
+    bottom: -5px;
   }
 }
