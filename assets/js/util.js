@@ -3,7 +3,8 @@ import { INITIAL_LANGUAGE } from './constant.js';
 export function checkLoaded(
   startTime,
   loaderElement,
-  delayLoadingPage = false
+  delayLoadingPage = false,
+  animationFn = null
 ) {
   const maxLoadingTime = 2500; // 2.5 seconds
   const elapsedTime = Date.now() - startTime;
@@ -13,9 +14,11 @@ export function checkLoaded(
   if (delayLoadingPage && elapsedTime < maxLoadingTime) {
     setTimeout(() => {
       loaderElement.style.display = 'none';
+      if (animationFn) animationFn();
     }, timeRemaining);
   } else {
     loaderElement.style.display = 'none';
+    if (animationFn) animationFn();
   }
 }
 

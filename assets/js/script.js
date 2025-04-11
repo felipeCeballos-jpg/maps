@@ -33,13 +33,13 @@ initLanguage(html);
 
 const startLoadingTime = Date.now();
 window.addEventListener('load', () => {
-  checkLoaded(startLoadingTime, loader, true);
+  checkLoaded(startLoadingTime, loader, true, sideElementsAnimation);
 });
 
 window.addEventListener('DOMContentLoaded', () => {
   updateDesign(mqlMobile.matches);
 
-  sideElementsAnimation();
+  /*  sideElementsAnimation(); */
   booksAnimation();
 });
 
