@@ -124,6 +124,7 @@
     top: -8vmin;
     left: -34vmin;
     rotate: 0deg;
+    transform: translateX(20%);
   }
 
   .entrance-container {
@@ -139,6 +140,7 @@
     top: 0rem;
     width: 68vmin;
     height: 90vmin;
+    transform: translateX(-10%);
   }
 
   .brunch1-img {

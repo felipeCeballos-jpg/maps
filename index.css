@@ -214,7 +214,7 @@ a {
   height: 28.843rem;
   top: -16.063rem;
   left: 62.543rem;
-
+  transform: translateX(20%);
   z-index: 7;
 }
 
@@ -280,6 +280,7 @@ a {
   left: -8.188rem;
   rotate: 4.65deg;
   z-index: 7;
+  transform: translateX(-10%);
 }
 
 .brunch2-img {
